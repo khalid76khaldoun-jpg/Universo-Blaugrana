@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="img/logo-fc-barcelona.svg">
 </head>
+
 <body>
     <header>
         <h1>Hazte Socio</h1>
@@ -23,7 +25,104 @@
     </nav>
     <main>
         <section>
-            <h2></h2>
+
+            <h2>Formulario para hacerse Socio</h2>
+            <p>Los campos marcados con * son obligatorios.</p>
+
+            <form name="inscripcion" action="procesar.php" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Datos de Usuario</legend>
+                    <p>
+                        <label for="nombre">Nombre o apodo *:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="30"
+                            placeholder="Tu nombre">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electrónico *:</label>
+                        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="pin">PIN de acceso (números o letras) *:</label>
+                        <input type="password" id="pin" name="pin" required minlength="4" maxlength="8">
+                    </p>
+
+                    <p>
+                        <label for="fecha">Fecha de visita *:</label>
+                        <input type="date" id="fecha" name="fecha" required min="2026-01-01" max="2026-12-31">
+                    </p>
+
+                    <p>
+                        <label for="avatar">Foto de perfil o avatar (JPG/PNG) *:</label>
+                        <input type="file" id="avatar" name="avatar" accept=".jpg, .png" required>
+                    </p>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Detalles de la Reserva</legend>
+                    <p>
+                        <label for="entradas">Cantidad de entradas *:</label>
+                        <input type="number" id="entradas" name="entradas" min="1" max="5" value="1" required>
+                    </p>
+
+                    <p>
+                        <label for="zona">Zona del estadio *:</label>
+                        <select id="zona" name="zona" required>
+                            <option value="" disabled selected>-- Elige una zona --</option>
+                            <option value="tribuna">Tribuna</option>
+                            <option value="lateral">Lateral</option>
+                            <option value="gol">Gol</option>
+                        </select>
+                    </p>
+
+
+
+                    <p>
+                        <label for="nivel">Nivel de aficionado (1 al 10):</label>
+                        <input type="range" id="nivel" name="nivel" min="1" max="10" value="5">
+                    </p>
+
+                    <p>Tipo de entrada *:</p>
+                    <p>
+                        <input type="radio" id="adulto" name="tipo_entrada" value="adulto" checked required>
+                        <label for="adulto">Adulto</label>
+
+                        <input type="radio" id="infantil" name="tipo_entrada" value="infantil">
+                        <label for="infantil">Infantil</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opciones Adicionales</legend>
+
+                    <p>Extras deseados:</p>
+                    <p>
+                        <input type="checkbox" id="bus" name="extras[]" value="bus">
+                        <label for="bus">Transporte en autobús</label><br>
+
+                        <input type="checkbox" id="guia" name="extras[]" value="guia">
+                        <label for="guia">Guía para el museo</label><br>
+
+                        <input type="checkbox" id="boletin" name="extras[]" value="boletin" checked>
+                        <label for="boletin">Pisar el campo</label>
+                    </p>
+
+                    <p>
+                        <label for="comentarios">Comentarios o peticiones:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"
+                            placeholder="Escribe aquí..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar todo</button>
+                    </p>
+                </fieldset>
+
+            </form>
         </section>
     </main>
     <aside>
@@ -48,10 +147,12 @@
     </aside>
     <footer>
         <address>
-            Autor: Khalid Echchadli khaldoun - Curso: Desarrollo de Aplicaciones Multiplataforma - Modulo: Lenguaje de Marcas <br>
+            Autor: Khalid Echchadli khaldoun - Curso: Desarrollo de Aplicaciones Multiplataforma - Modulo: Lenguaje de
+            Marcas <br>
             Contacto: <a href="mailto:kechkha0409@ieszaidinvergeles.org">kechkha0409@ieszaidinvergeles.org</a> <br>
             Última modificación: <time datetime="2026-11-11">11 de noviembre de 2026</time>
         </address>
-    </footer> 
+    </footer>
 </body>
+
 </html>
