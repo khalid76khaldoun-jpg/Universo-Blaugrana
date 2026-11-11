@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Universo Blaugrana</title>
+        <link>https://khalid76khaldoun-jpg.github.io/Universo-Blaugrana/</link>
+        <description>Canal oficial de noticias, novedades y contenido sobre el FC Barcelona.</description>
+        <language>es</language>
+
+        <item>
+            <title>Galería Audiovisual del Barça</title>
+            <link>https://khalid76khaldoun-jpg.github.io/Universo-Blaugrana/galeria.html</link>
+            <guid>https://khalid76khaldoun-jpg.github.io/Universo-Blaugrana/galeria.html</guid>
+            <pubDate>Mon, 02 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Explora las imágenes destacadas, vídeos e información interactiva del Camp Nou.</description>
+        </item>
+
+        <item>
+            <title>Formulario de Inscripción y Reserva</title>
+            <link>https://khalid76khaldoun-jpg.github.io/Universo-Blaugrana/formulario.html</link>
+            <guid>https://khalid76khaldoun-jpg.github.io/Universo-Blaugrana/formulario.html</guid>
+            <pubDate>Tue, 03 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Inscríbete como aficionado y gestiona tus peticiones de entradas.</description>
+        </item>
+
+        <item>
+            <title>Estadísticas del Club</title>
+            <link>https://khalid76khaldoun-jpg.github.io/Universo-Blaugrana/tabla.html</link>
+            <guid>https://khalid76khaldoun-jpg.github.io/Universo-Blaugrana/tabla.html</guid>
+            <pubDate>Wed, 04 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Consulta las tablas de rendimiento y resultados actualizados de la temporada.</description>
+        </item>
+    </channel>
+</rss>
